@@ -175,7 +175,7 @@ function DrawerAppBar(props) {
                 <NavLink to="/"><li>Home</li></NavLink>
                 <NavLink to="/courses"><li>Courses</li></NavLink>
                 {location.pathname==="/" && <a href="#FAQ"><li>FAQs</li></a>}
-                <a href="/newsletter"><li>Newsletter</li></a>
+                <NavLink to="/newsletter"><li>Newsletter</li></NavLink>
                 <a href="#ContactUs"><li>Contact Us</li></a>
               </ul>
             </Box>
