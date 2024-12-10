@@ -1,0 +1,10 @@
+.coming-soon{
+    background: linear-gradient(195.22deg, #012B27 1.61%, #000000 100%);
+}
+
+.comingsoon-text{
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("./assets/Fonts/Montserrat.ttf");
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: green; /* Neon green color */
+    border-radius: 14px;
+    border: 5px solid green; /* Adjusted color for the border */
+  }
+  
+  .custom::-webkit-scrollbar {
+    width: 3px;
+    overflow-y: hidden;
+  }
+  
+  .custom::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+  }
+  
+  .custom::-webkit-scrollbar-thumb {
+    background-color: green; /* Neon green color */
+    border: 2px solid rgba(192, 178, 178, 0);
+  }
+  
+  .cus::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .cus::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+  
+  .cus::-webkit-scrollbar-thumb {
+    background-color: green; /* Neon green color */
+    margin: 10px;
+    border-radius: 14px;
+    border: 2px solid rgb(192, 178, 178); /* Adjusted color for the border */
+  }
+  
