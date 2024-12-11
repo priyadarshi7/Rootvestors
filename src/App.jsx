@@ -5,12 +5,26 @@ import ContactUs from "./components/Footer/Footer"
 import ComingSoon from "./components/ComingSoon/ComingSoon"
 import Courses from "./pages/Courses/Courses"
 import Newsletter from "./pages/Newsletter/Newsletter"
+import LoadingPage from "./components/Loading/LoadingPage"
 
 export default function App(){
+  const [loading,setLoading] = React.useState(true);
+  React.useEffect(()=>{
+   document.body.style.overflow = "hidden";
+   const timer = setTimeout(() => {
+      setLoading(false);
+      document.body.style.overflow = "auto";
+    }, 4000);
+    return () => {
+      clearTimeout(timer);
+      document.body.style.overflow = "auto";
+    };
+  },[])
   return(
     <>
     <div>
-        <Routes>
+     {loading && <LoadingPage/>}
+        <Routes style={{overflow: loading ? "hidden" : "auto"}}>
             <Route path="/" element={<Home/>}/>
             <Route path="/courses" element={<Courses/>}/>
             <Route path="/newsletter" element={<Newsletter/>}/>
