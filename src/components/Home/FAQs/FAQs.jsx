@@ -13,10 +13,6 @@ const FAQs = () => {
   return (
     <div className="faq-container" id="FAQ">
       <h1
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="3500"
-        data-aos-delay="300"
       >
         FAQs
       </h1>
@@ -26,11 +22,6 @@ const FAQs = () => {
             <div
               className="faq-block"
               key={faq.id}
-              data-aos="fade-right"
-              data-aos-anchor="#example-anchor"
-              data-aos-offset="500"
-              data-aos-duration="3000"
-              data-aos-delay={600 + index * 300}
             >
               <div
                 className={`question ${
