@@ -13,7 +13,7 @@ const Home = () => {
         <DrawerAppBar/>
         <Main/>
         <Main2/>
-        <FAQs/>
+        {/* <FAQs/> */}
         <Newsletter/>
         <ContactUs/>
     </div>
