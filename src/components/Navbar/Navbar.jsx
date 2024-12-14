@@ -100,11 +100,6 @@ function DrawerAppBar(props) {
             </ListItemButton>
           </ListItem>
         </NavLink>
-        {location.pathname==="/" && <ListItem>
-          <ListItemButton href="#FAQ" onClick={() => setOpen(false)}>
-            <ListItemText primary="FAQ" />
-          </ListItemButton>
-        </ListItem>}
         <ListItem>
           <ListItemButton href="#ContactUs" onClick={() => setOpen(false)}>
             <ListItemText primary="Contact Us" />
@@ -174,7 +169,6 @@ function DrawerAppBar(props) {
               >
                 <NavLink to="/"><li>Home</li></NavLink>
                 <NavLink to="/courses"><li>Courses</li></NavLink>
-                {location.pathname==="/" && <a href="#FAQ"><li>FAQs</li></a>}
                 <NavLink to="/newsletter"><li>Newsletter</li></NavLink>
                 <a href="#ContactUs"><li>Contact Us</li></a>
               </ul>
