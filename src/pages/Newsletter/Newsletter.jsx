@@ -22,6 +22,7 @@ const Newsletter = () => {
                 coverImage={data.coverImage}
                 content={data.content}
                 pdfSrc={data.pdfSrc} // Assuming your data object includes pdfSrc for each newsletter
+                date={data.date}
               />
             ))}
           </div>

@@ -141,7 +141,7 @@ export default function NewsletterCard(props) {
             </Avatar>
           }
           title={`Edition: ${props.edition} Volume: ${props.volume}`}
-          subheader="September 14, 2016"
+          subheader={props.date}
           titleTypographyProps={{
             sx: {
               fontWeight: 'bold',
