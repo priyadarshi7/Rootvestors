@@ -10,7 +10,6 @@ import Main2 from '../../components/Home/Main2/Main2'
 const Home = () => {
   return (
     <div className='home' id="home">
-        <DrawerAppBar/>
         <Main/>
         <Main2/>
         {/* <FAQs/> */}

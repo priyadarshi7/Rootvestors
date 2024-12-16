@@ -6,6 +6,7 @@ import ComingSoon from "./components/ComingSoon/ComingSoon"
 import Courses from "./pages/Courses/Courses"
 import Newsletter from "./pages/Newsletter/Newsletter"
 import LoadingPage from "./components/Loading/LoadingPage"
+import DrawerAppBar from "./components/Navbar/Navbar"
 
 export default function App(){
   const [loading,setLoading] = React.useState(true);
@@ -14,7 +15,7 @@ export default function App(){
    const timer = setTimeout(() => {
       setLoading(false);
       document.body.style.overflow = "auto";
-    }, 4000);
+    }, 0);
     return () => {
       clearTimeout(timer);
       document.body.style.overflow = "auto";
@@ -24,6 +25,7 @@ export default function App(){
     <>
     <div>
      {loading && <LoadingPage/>}
+     <DrawerAppBar/>
         <Routes style={{overflow: loading ? "hidden" : "auto"}}>
             <Route path="/" element={<Home/>}/>
             <Route path="/courses" element={<Courses/>}/>
