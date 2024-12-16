@@ -15,7 +15,7 @@ export default function App(){
    const timer = setTimeout(() => {
       setLoading(false);
       document.body.style.overflow = "auto";
-    }, 0);
+    }, 4000);
     return () => {
       clearTimeout(timer);
       document.body.style.overflow = "auto";
