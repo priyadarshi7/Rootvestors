@@ -10,7 +10,6 @@ const Newsletter = () => {
   return (
     <>
       <div className='newsletter-page'>
-        <DrawerAppBar />
         <div className="newsletter-cards-container">
           <span className='main-text' id="main-text-2">Rootwise</span>
           <div className='newsletter-cards'>

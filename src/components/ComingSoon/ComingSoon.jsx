@@ -10,7 +10,6 @@ const ComingSoon = () => {
   return (
     <>
     <div className='coming-soon'>
-    <DrawerAppBar/>
         <div className='comingsoon-text' style={{display:"flex", flexDirection:"column",alignItems:"center", justifyContent:"center"}}>
           {location.pathname==="/courses" && <span className='main-text' id="main-text-2">Courses</span>}
           {location.pathname==="/newsletter" && <span className='main-text' id="main-text-2">Newsletter</span>}
