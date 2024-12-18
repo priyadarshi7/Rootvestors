@@ -1,0 +1,236 @@
+.about-us-small{
+    display: flex;
+    align-items: center;
+  }
+  
+  /* .about-iiit-img{
+    background-image: url('../../../assets/logos/3D_Logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:3.5vh;
+    width:3.5vh;
+    cursor: pointer;
+    margin-right: 0.5vh;
+  }
+  
+  .about-hack-small-img{
+    background-image: url('../../../assets/logos/3D_Logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:3.5vh;
+    width:3.5vh;
+    cursor: pointer;
+    margin-right: 0.5vh;
+  } */
+
+  .main-text{
+    margin-bottom: 32px;
+  }
+  
+  .main-about-us{
+    justify-content: center;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .two-boxes-div1{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 30.48px;
+    letter-spacing: 0.8999999761581421px;
+    text-align: justified;
+    margin-bottom: 4vh;
+  }
+  
+  .two-boxes-div2{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    font-family: Montserrat;
+  margin-bottom: 10vh;
+  font-weight: 400;
+  line-height: 30.48px;
+  letter-spacing: 0.8999999761581421px;
+  text-align: justified;
+  }
+  
+  .two-boxes-div2 h2{
+    font-family: Montserrat;
+  font-size: 27px;
+  color: #B8DE29;
+  font-weight: 700;
+  line-height: 54.86px;
+  letter-spacing: 0.8999999761581421px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  }
+  
+  .two-boxes-div1 h2{
+    display: flex;
+    font-family: Montserrat;
+  font-size: 32px;
+  color: #B8DE29;
+  margin: auto;
+  font-weight: 700;
+  line-height: 54.86px;
+  letter-spacing: 0.8999999761581421px;
+  text-align: center;
+  
+  }
+  
+  .two-boxes-div1 >  img{
+    display: flex;
+    width:600px;
+    height:250px;
+    border-radius: 25px;
+    /* border: white 1px solid; */
+    margin:auto;
+    margin-right:50px;
+  }
+  
+  .two-boxes-div2>  img{
+    display: flex;
+    width:600px;
+    height:250px;
+    border-radius: 25px;
+    /* border: white 1px solid; */
+    margin-left:50px;
+  }
+
+  .small-content{
+    font-weight: 200;
+    text-align: justify;
+    font-size: 20px; 
+    line-height: 1.6;
+    color: white;
+  }
+
+  
+  .about-us-heading{
+    margin-top: 4vh;
+    background-image: url('./assets/Texts/about.png');
+    background-position:top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:70%;
+    height: 10vh;
+    margin-bottom: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    border:0;
+    padding: 0;
+  }
+  
+  
+  .about-us-heading h2{
+    background: linear-gradient(91.23deg, #FFFFFF -23.09%, #B8DE29 52.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    margin-bottom: 20px;
+    margin: auto;
+    margin-top: 6vh;
+    font-size: 70px;
+    font-weight: 900;
+  }
+  
+  .main-about-us{
+
+    justify-content: center;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  @media (max-width:1200px){
+    .two-boxes-div1{
+      width:70%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:3vh;
+      margin-bottom: 10vh;
+    }
+    .two-boxes-div2{
+      width:70%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap:3vh;
+    }
+  }
+  
+  @media (max-width: 980px){
+    .about-us-heading{
+      height: 9vh;
+    }
+    .about-us-heading h2{
+      font-size: 5vh;
+      margin-top: 3vh;
+    }
+  
+    .two-boxes-div1 img{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .two-boxes-div2 img{
+      margin-left:0;
+      margin-right: 0;
+    }
+  } 
+  
+  
+  @media (max-width:660px){
+    .about-us-heading{
+      margin-top: 4vh;
+      margin-bottom: 4vh;
+    }
+    .about-us-heading h2{
+      font-size: 3vh;
+      margin-top: 2vh;
+    }
+    .two-boxes-div1 h2{
+      font-size: 16px;
+    }
+    .two-boxes-div1 img{
+      width:300px;
+      height:150px;
+    }
+    .two-boxes-div2 img{
+      width:300px;
+      height:150px;
+    }
+      .small-content{
+          font-weight: 200;
+          text-align: justify;
+          font-size: 20px; 
+          color: white;
+          word-spacing: -9;
+          hyphens: auto;
+      }
+    
+    .two-boxes-div2 h2{
+      font-size: 16px;
+    }
+  }
+
+  
+  @media (max-width:440px){
+  .about-us-small h2{
+    font-size: 2.4vh;
+  }
+  }
+  
+
+  
+  

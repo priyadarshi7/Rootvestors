@@ -120,6 +120,8 @@ export default function NewsletterCard(props) {
     <div>
       <Card
         sx={{
+          background:"transparent",
+          color:"white",
           maxWidth: 345,
           height: 500, // Fixed card height
           display: 'flex',
@@ -150,7 +152,7 @@ export default function NewsletterCard(props) {
           subheaderTypographyProps={{
             sx: {
               fontWeight: 'bold',
-              color: 'black',
+              color:"white",
             },
           }}
         />
@@ -180,7 +182,7 @@ export default function NewsletterCard(props) {
               background: 'black',
               color: 'white',
               marginLeft: 'auto',
-              marginRight: '5px',
+              marginRight: '10px',
             }}
             onClick={handleViewClick}
           >
@@ -190,6 +192,7 @@ export default function NewsletterCard(props) {
             sx={{
               background: 'black',
               color: 'white',
+              marginRight:"auto"
             }}
             onClick={handleDownloadClick}
           >

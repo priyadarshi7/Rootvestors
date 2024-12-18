@@ -6,6 +6,7 @@ import FAQs from '../../components/Home/FAQs/FAQs'
 import ContactUs from '../../components/Footer/Footer'
 import Newsletter from '../../components/Home/Newsletter/Newsletter'
 import Main2 from '../../components/Home/Main2/Main2'
+import AboutUs from '../../components/Home/AboutUs/AboutUs'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Main/>
         <Main2/>
         {/* <FAQs/> */}
+        <AboutUs/>
         <Newsletter/>
         <ContactUs/>
     </div>
