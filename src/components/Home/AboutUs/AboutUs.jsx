@@ -13,7 +13,7 @@ export default function AboutUs(){
 
     return (
         <div className="main-about-us" id="About Us">
-                 <span className='main-text' id="main-text-2">About Us</span>
+                 <span className='main-text-about' id="main-text-2">About Us</span>
             <div className="two-boxes-div1">
                 {/* <img src={iiit} alt="rootvestors" data-aos="zoom-in" data-aos-delay="200"></img> */}
                 <div>
