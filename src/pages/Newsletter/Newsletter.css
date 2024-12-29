@@ -8,8 +8,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100svh;
     gap:20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .newsletter-cards{
@@ -18,4 +19,5 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap:50px;
 }

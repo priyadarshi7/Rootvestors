@@ -9,6 +9,7 @@ import ContactUs from '../../components/Footer/Footer';
 const Newsletter = () => {
   return (
     <>
+         <DrawerAppBar/>
       <div className='newsletter-page'>
         <div className="newsletter-cards-container">
           <span className='main-text' id="main-text-2">Rootwise</span>

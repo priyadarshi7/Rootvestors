@@ -21,6 +21,7 @@ export default function App(){
       document.body.style.overflow = "auto";
     };
   },[])
+  
   return(
     <>
     <div>
