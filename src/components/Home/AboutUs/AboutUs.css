@@ -68,15 +68,13 @@
   letter-spacing: 0.8999999761581421px;
   text-align: center;
   display: flex;
-  margin: auto;
   }
   
   .two-boxes-div1 h2{
     display: flex;
     font-family: Montserrat;
-  font-size: 32px;
+  font-size: 27px;
   color: #B8DE29;
-  margin: auto;
   font-weight: 700;
   line-height: 54.86px;
   letter-spacing: 0.8999999761581421px;
@@ -105,7 +103,6 @@
 
   .small-content{
     font-weight: 200;
-    text-align: justify;
     font-size: 20px; 
     line-height: 1.6;
     color: white;
@@ -200,7 +197,7 @@
       margin-top: 2vh;
     }
     .two-boxes-div1 h2{
-      font-size: 16px;
+      font-size: 25px;
     }
     .two-boxes-div1 img{
       width:300px;
@@ -212,22 +209,20 @@
     }
       .small-content{
           font-weight: 200;
-          text-align: justify;
-          font-size: 20px; 
+          font-size: 15px; 
           color: white;
           word-spacing: -9;
-          hyphens: auto;
       }
     
     .two-boxes-div2 h2{
-      font-size: 16px;
+      font-size: 25px;
     }
   }
 
   
   @media (max-width:440px){
   .about-us-small h2{
-    font-size: 2.4vh;
+    font-size: 25px;
   }
   }
   

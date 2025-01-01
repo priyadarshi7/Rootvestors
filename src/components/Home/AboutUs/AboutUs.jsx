@@ -20,7 +20,7 @@ export default function AboutUs(){
                     <div className="about-us-small">
                     <div className="about-iiit-img" onClick={() => window.open('https://www.iiitnr.ac.in/', '_main')}></div><h2>Our Vision</h2>
                     </div>
-                    <div className="small-content"  lang="en" data-aos="zoom-in" data-aos-delay="200">At Root Vestors, we are r&shy;eshaping the future of education and transfor&shy;ming how individuals le&shy;arn, develop, and succeed in the digital era. We believe education extends far beyond traditional classrooms and methodologies; it is a continuous journey that should be accessible, personalised, and empowering.</div>
+                    <div className="small-content"  lang="en" data-aos="zoom-in" data-aos-delay="200">At Rootvestors, we are reshaping the future of education and transforming how individuals learn, develop, and succeed in the digital era. We believe education extends far beyond traditional classrooms and methodologies; it is a continuous journey that should be accessible, personalised, and empowering.</div>
                 </div>
             </div>
 
