@@ -5,6 +5,7 @@ import HomeSection2 from "../../components/Home/Section2/HomeSection2"
 import HomeSection3 from "../../components/Home/Section3/HomeSection3"
 import HomeSection4 from "../../components/Home/Section4/HomeSection4"
 import HomeSection5 from "../../components/Home/Section5/HomeSection5"
+import Footer from "../../components/ContactUs/ContactUs"
 
 export default function Home(){
     return(
@@ -14,6 +15,7 @@ export default function Home(){
             <HomeSection3/>
             <HomeSection4/>
             <HomeSection5/>
+            <Footer/>
         </div>
     )
 }
