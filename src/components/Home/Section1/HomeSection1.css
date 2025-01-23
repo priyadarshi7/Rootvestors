@@ -1,3 +1,91 @@
 .home-section-1{
     height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.home-section-1-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+
+.home-section-1-img img{
+    height: 400px;
+}
+
+.home-section-1-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.home-section-1-text .h2 {
+    font-family: Montserrat;
+    font-size: 80px;
+    color:#B8DE29;
+    font-weight: 800;
+}
+
+.home-section-1-text-desc{
+    color: #555555;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+@media (max-width:1060px) {
+    .home-section-1-img img{
+        height: 250px;
+    }
+    
+    .home-section-1-text .h2 {
+        font-size: 60px;
+    }
+    
+    .home-section-1-text-desc{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:860px) {
+    .home-section-1{
+        flex-direction: column-reverse;
+    }
+
+    .home-section-1-text {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .home-section-1-img img{
+        margin-bottom: 30px;
+    } 
+}
+
+@media (max-width:450px) {
+    .home-section-1{
+        flex-direction: column-reverse;
+    }
+
+    .home-section-1-img img{
+        margin-bottom: 30px;
+        height: 200px;
+    } 
+    
+    .home-section-1-text .h2 {
+        font-size: 45px;
+    }
+    
+    .home-section-1-text-desc{
+        font-size: 15px;
+    }
 }
