@@ -9,6 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { NavLink } from "react-router-dom"
 
 export default function HomeSection4(){
     return(
@@ -72,7 +73,7 @@ export default function HomeSection4(){
               justifyContent:"center"
             }}
             >
-            <Button sx={{
+            <NavLink to="/courses"><Button sx={{
               textTransform:"none",
               backgroundColor:"#4285F4",
               color:"white",
@@ -82,7 +83,7 @@ export default function HomeSection4(){
               marginTop:"20px",
               fontSize:"20px",
               fontFamily:"Montserrat"
-            }}>View Courses</Button>
+            }}>View Courses</Button></NavLink>
             </div>
         </div>
     )
