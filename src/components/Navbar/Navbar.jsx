@@ -17,7 +17,7 @@ import Button from '@mui/material/Button';
 import { NavLink } from 'react-router-dom';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Home', 'About', 'Contact', 'Newsletter', 'Course'];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -46,14 +46,33 @@ function DrawerAppBar(props) {
 </svg>
       </Typography>
       <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+      <List sx={{color:"black"}}>
+        <NavLink to="/">
+          <ListItem>
+            <ListItemButton onClick={() => setOpen(false)}>
+              <ListItemText primary="Home" />
             </ListItemButton>
           </ListItem>
-        ))}
+        </NavLink>
+        <NavLink to="/courses">
+          <ListItem>
+            <ListItemButton onClick={() => setOpen(false)}>
+              <ListItemText primary="Courses" />
+            </ListItemButton>
+          </ListItem>
+        </NavLink>
+        <NavLink to="/newsletter">
+          <ListItem>
+            <ListItemButton onClick={() => setOpen(false)}>
+              <ListItemText primary="Newsletter" />
+            </ListItemButton>
+          </ListItem>
+        </NavLink>
+        <ListItem>
+          <ListItemButton href="#Contact" onClick={() => setOpen(false)}>
+            <ListItemText primary="Contact Us" />
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
