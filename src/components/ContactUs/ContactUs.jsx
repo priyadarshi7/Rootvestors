@@ -2,10 +2,11 @@ import React from "react";
 import "./ContactUs.css"; // CSS file for styling
 import img from "/rootvestors_nav.png";
 import { Email, Instagram, LinkedIn } from "@mui/icons-material"; // Import icons from MUI
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="#contact">
       <div className="footer-container">
         {/* Logo Section */}
         <div className="footer-logo">
@@ -27,8 +28,8 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Social</h4>
           <ul>
-            <li><a href="#instagram" style={{display:"flex", alignItems:"center"}}><Instagram style={{ marginRight: "8px" }} /> Instagram</a></li>
-            <li><a href="#linkedin" style={{display:"flex", alignItems:"center"}}><LinkedIn style={{ marginRight: "8px" }} /> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/rootvestors/" target="_main" style={{display:"flex", alignItems:"center"}}><Instagram style={{ marginRight: "8px" }} /> Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/rootvestors/posts/?feedView=all" target="_main" style={{display:"flex", alignItems:"center"}}><LinkedIn style={{ marginRight: "8px" }} /> LinkedIn</a></li>
           </ul>
         </div>
 
@@ -37,7 +38,7 @@ const Footer = () => {
           <h4>Links</h4>
           <ul>
             <li><a href="#courses">Courses</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
+            <li><NavLink to="/newsletter">Newsletter</NavLink></li>
             <li><a href="#teach">Become Teacher</a></li>
           </ul>
         </div>

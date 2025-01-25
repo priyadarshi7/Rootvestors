@@ -1,0 +1,145 @@
+.newsletter-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.newsletter-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.newsletter-main-text {
+    color: black;
+    font-weight: 500;
+    font-family: Montserrat;
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.newsletter-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Adds spacing between items */
+    margin: 20px;
+}
+
+.newsletter-page-text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center; /* Center-align text for better layout */
+}
+
+.newsletter-page-img {
+    width: 50%;
+}
+
+.newsletter-page-img img {
+    height: auto;
+    width: 100%;
+    object-fit: cover; /* Ensures the image scales nicely */
+}
+
+.newsletter-text {
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.newsletter-text span {
+    color: #B8DE29;
+}
+
+.newsletter-subscribe-input {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.newsletter-subscribe-input input {
+    width: 70%;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+}
+
+.newsletter-subscribe-input button {
+    padding: 20px 30px;
+    font-size: 16px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: #E5F6A7;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 32px;
+}
+
+.newsletter-subscribe-input button:hover {
+    background-color: #9cc020;
+    color:white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .newsletter-page-text, .newsletter-page-img {
+        width: 100%;
+    }
+
+    .newsletter-subscribe {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px;
+    }
+
+    .newsletter-main-text {
+        font-size: 50px; /* Slightly smaller font size */
+    }
+
+    .newsletter-cards-container {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-main-text {
+        font-size: 40px;
+    }
+
+    .newsletter-page-text {
+        gap: 10px;
+    }
+
+    .newsletter-text {
+        font-size: 18px;
+    }
+
+    .newsletter-subscribe-input input {
+        width: 100%;
+    }
+
+    .newsletter-subscribe-input button {
+        width: 100%; /* Full width for the button */
+    }
+
+    .newsletter-page-img img {
+        width: 100%; /* Ensures the image fits the screen */
+    }
+}

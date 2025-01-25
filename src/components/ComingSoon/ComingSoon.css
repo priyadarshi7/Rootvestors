@@ -1,0 +1,12 @@
+.comingsoon-text{
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-main-text{
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 600;
+}

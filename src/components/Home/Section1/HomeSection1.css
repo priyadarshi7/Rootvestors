@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
+    flex-direction: column-reverse;
 }
 
 .home-section-1-img{
@@ -22,7 +23,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: left;
+    align-items: center;
 }
 
 .home-section-1-text .h2 {
@@ -36,6 +37,7 @@
     color: #555555;
     font-weight: 600;
     font-size: 30px;
+    text-align: center;
 }
 
 @media (max-width:1060px) {

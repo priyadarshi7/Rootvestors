@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { NavLink } from 'react-router-dom';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -110,21 +111,21 @@ function DrawerAppBar(props) {
 </svg>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }}}>
-              <Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
+              <NavLink to="/"><Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
                 Home
-              </Button>
-              <Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
+              </Button></NavLink>
+              {/* <Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
                 About
-              </Button>
-              <Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
+              </Button> */}
+              <NavLink to="/courses"><Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
                 Courses
-              </Button>
-              <Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
+              </Button></NavLink>
+              <NavLink to="/newsletter"><Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
                 Newsletter
-              </Button>
-              <Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
+              </Button></NavLink> 
+              <a href="#contact"><Button sx={{color:"black", fontWeight:"500", textTransform:"none", fontSize:"15px", fontFamily:"Montserrat" }}>
                 Contact Us
-              </Button>
+              </Button></a>
           </Box>
         </Toolbar>
       </AppBar>
