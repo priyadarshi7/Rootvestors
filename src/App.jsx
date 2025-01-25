@@ -13,15 +13,20 @@ export default function App() {
   React.useEffect(() => {
     // Ensure body overflow is hidden during the loading phase
     document.body.style.overflow = "hidden";
+    
+    // Set loading to true on route change
+    setLoading(true);
+
     const timer = setTimeout(() => {
       setLoading(false);
       document.body.style.overflow = "auto";
-    }, 0);
+    }, 4000);
+
     return () => {
       clearTimeout(timer);
       document.body.style.overflow = "auto";
     };
-  }, [location]); // Re-trigger loading screen whenever the route changes
+  }, [location.pathname]); // Trigger loading screen on every route change
 
   React.useEffect(() => {
     // Scroll to top when the route changes
@@ -35,7 +40,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/newsletter" element={<Newsletter />} />
-        <Route path="/courses" element={<Courses/>} />
+        <Route path="/courses" element={<Courses />} />
       </Routes>
     </>
   );
