@@ -1,14 +1,28 @@
 import React from "react"
 
+//CoverImages
 import img1 from "../assets/Newsletter/CoverImages/Rootvestors_mobile.png"
 import dec302k24 from "../assets/Newsletter/CoverImages/30Dec2k24.png"
 import jan132k25 from "../assets/Newsletter/CoverImages/13Jan2k25.png"
+import jan272k25 from "../assets/Newsletter/CoverImages/27Jan2k25.png"
 
+//PDFs
 import Rootwise_16dec from "../assets/Newsletter/Pdf/Rootwise_16December.pdf"
 import Rootwise_30dec from "../assets/Newsletter/Pdf/Rootwise_30December.pdf"
 import Rootwise_13jan from "../assets/Newsletter/Pdf/Rootwise_13January.pdf"
+import Rootwise_27Jan_2025 from "../assets/Newsletter/Pdf/Rootwise_27January.pdf"
 
 const NewsletterData = [
+    {
+        id:4,
+        date:"January 27, 2025",
+        edition:2,
+        volume:2,
+        coverImage:jan272k25,
+        content: "Clone it like Deepseek!",
+        pdfSrc:Rootwise_27Jan_2025,
+        route:"/newsletter/view?id=1&edition=1&volume=2"
+    },
     {
         id:3,
         date:"January 13, 2025",
